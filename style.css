@@ -1,3 +1,26 @@
-body {
-    color: red;
+body{
+
+}
+
+.top {
+    background-color: rgb(10, 15, 66);
+    color: #eee;
+}
+
+.header {
+    display: flex;
+    font-size: 40px;
+    margin: 16px 50px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    padding: 16px;
+    color:grey;
+    font-size: 30px;
+}
+
+.header div{
+    flex: 1;
 }

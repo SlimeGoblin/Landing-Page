@@ -9,8 +9,8 @@ body{
 
 
 .header, .hero{
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 .header {
@@ -30,10 +30,13 @@ body{
 .hero{
     height: 400px;
     width: auto;
+    padding: 100px;
 
     display: flex;
     justify-content: center;
     gap: 100px;
+/* TODO : May need to fix spacing or change image to look better */
+
 }
 
 .heroleft{

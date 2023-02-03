@@ -2,22 +2,30 @@ body{
     margin: 0;
 }
 
+
 .top{
     background-color: #1F2937;
     color: #F9faf8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
-/* TODO : when shrinking keep elements in their container */
+/* TODO : when shrinking the left margin disapears */
 
-.header, .hero, .picturesection, .quotespace, .signup{
+/* TODO : Wish it would shrink like flex wrap and keep everything centered */
+
+/* TODO : Add your own content/photos and styles */
+
+.top, .header, .picturecontainer, .quotespace, .signup{
     padding-left:200px;
     padding-right:200px;
     box-sizing: border-box;
     height: 500px;
-
-
+    min-width: 1000px;
 }
 
 .header {
@@ -26,6 +34,11 @@ body{
     align-items: center;
     margin: 0px;
     height: 100px;
+    position: sticky;
+    background-color: #1F2937;
+    top: 0px;
+    color: #F9faf8;
+    min-width: 1000px;
 }
 
 a {
@@ -40,10 +53,10 @@ a {
 }
 
 .hero{
-    width: auto;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 50px;
 }
 
 .heroleft, .heroright{
@@ -86,11 +99,12 @@ a {
     align-items: center;
 }
 
+
 .infoboxes img {
     border: 6px solid #3882F6;
     border-radius: 25px;
 
-/* TODO : Depending on amount of text in img; will flex awkwardly/ justify awkwardly */
+/* TODO : using min-width; to shrink but can i use flex wrap? */
 
 /* TODO : Flex shrink- everything leaves container */
 
@@ -115,10 +129,13 @@ a {
 .quotespace{
     background-color: #E5E7EB;
     display: flex;
+
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 36px;
+
+
 }
 
 .quotespace div{
@@ -181,6 +198,8 @@ a {
     align-items: center;
     justify-content: center;
     height: 100px;
+
+    min-width: 1000px;
 }
 
 

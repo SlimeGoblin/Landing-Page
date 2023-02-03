@@ -8,7 +8,9 @@ body{
 }
 
 
-.header, .hero{
+/* TODO : I can't tell if infoboxes has padding on either side */
+
+.header, .hero, .infoboxes, .quotespace{
     padding-left: 200px;
     padding-right: 200px;
 }
@@ -75,8 +77,46 @@ a {
 
 .infoboxes {
     display: flex;
-    justify-content: space-between;
+    height: 500px;
+
+    justify-content: center;
+    gap: 50px;
     margin: 20px 100px;
+    text-align: center;
+}
+
+.infoboxes img {
+    border: 6px solid rgb(8, 8, 77);
+
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+
+    font-size: 36px;
+    font-weight: 800px;
+    color: #1F2937;
+}
+
+.quotespace{
+    background-color: #E5E7EB;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+
+}
+
+.quotespace div{
+    font-style: italic
+}
+
+.quotespace p{
+    font-weight: 800;
 }
 
 

@@ -10,9 +10,13 @@ body{
 
 /* TODO : I can't tell if infoboxes has padding on either side */
 
-.header, .hero, .infoboxes, .quotespace{
-    padding-left: 200px;
-    padding-right: 200px;
+.header, .hero, .picturesection, .quotespace, .signup{
+    padding-left:200px;
+    padding-right:200px;
+    box-sizing: border-box;
+    height: 500px;
+
+
 }
 
 .header {
@@ -30,26 +34,18 @@ a {
     font-size: 18px;
 }
 
-
 .header div{
     flex:1;
 }
 
-
-
 .hero{
-    height: 400px;
     width: auto;
-    padding: 100px;
-
     display: flex;
-    justify-content: center;
-    gap: 100px;
-/* TODO : May need to fix spacing or change image to look better */
-
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.heroleft{
+.heroleft, .heroright{
     width: 500px;
 }
 
@@ -75,26 +71,35 @@ a {
     margin-top: 16px;
 }
 
+.picturecontainer{
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
 .infoboxes {
     display: flex;
-    height: 500px;
-
     justify-content: center;
     gap: 50px;
-    margin: 20px 100px;
     text-align: center;
+    align-items: center;
 }
 
 .infoboxes img {
-    border: 6px solid rgb(8, 8, 77);
+    border: 6px solid #3882F6;
+    border-radius: 25px;
 
+/* TODO : Depending on amount of text; will flex awkwardly/ justify awkwardly */
+
+/* This is what magically kept the images in their container */
+    max-width: 100%;
+    max-height: 100%;
 }
 
-h1{
+#random {
     display: flex;
     justify-content: center;
-    /* text-align: center; */
-
+    margin: 50px auto 10px auto;
     font-size: 36px;
     font-weight: 800px;
     color: #1F2937;
@@ -117,6 +122,23 @@ h1{
 
 .quotespace p{
     font-weight: 800;
+}
+
+.signup{
+
+    background-color: white;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bluecontainer {
+    display: flex;
+    background-color: blue;
+    padding: 16px;
+    gap: 10px;
 }
 
 

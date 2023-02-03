@@ -1,5 +1,6 @@
 body{
     margin: 0;
+
 }
 
 
@@ -13,19 +14,17 @@ body{
 }
 
 
-
-/* TODO : when shrinking the left margin disapears */
-
 /* TODO : Wish it would shrink like flex wrap and keep everything centered */
 
 /* TODO : Add your own content/photos and styles */
 
-.top, .header, .picturecontainer, .quotespace, .signup{
+.top, .header, .picturecontainer, .quotespace, .signup, .hero{
     padding-left:200px;
     padding-right:200px;
     box-sizing: border-box;
     height: 500px;
     min-width: 1000px;
+
 }
 
 .header {
@@ -38,7 +37,6 @@ body{
     background-color: #1F2937;
     top: 0px;
     color: #F9faf8;
-    min-width: 1000px;
 }
 
 a {
@@ -57,12 +55,8 @@ a {
     align-items: center;
     justify-content: center;
     gap: 50px;
-}
 
-.heroleft, .heroright{
-    width: 500px;
 }
-
 
 .hero h1{
     font-size: 48px;

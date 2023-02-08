@@ -34,7 +34,7 @@ body{
     align-items: center;
     margin: 0px;
     height: 100px;
-   /* position: sticky; */
+    position: sticky; 
     background-color: #1F2937;
     top: 0px;
     color: #F9faf8;
@@ -101,9 +101,7 @@ a {
     border: 6px solid #3882F6;
     border-radius: 25px;
 
-/* TODO : using min-width; to shrink but can i use flex wrap? */
-
-/* TODO : Flex shrink- everything leaves container */
+/* TODO : Why won't it flex-wrap??!! */
 
 /* TODO : HERO image is too small- replace it */
 

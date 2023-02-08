@@ -60,13 +60,15 @@ a {
     margin-top: 20px;
     margin-bottom: 20px;
 
+    border: 2px solid red;
+
 }
 
-.heroright{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.heroleft{
+    text-align: center;
 }
+
+
 
 .hero h1{
     font-size: 48px;
